@@ -1,0 +1,198 @@
+@import url(http://fonts.googleapis.com/css?family=Frijole);
+
+* {
+	margin:0;
+	padding: 0;
+}
+
+a, 
+a:hover,
+a:focus, 
+a:active {
+	text-decoration: none;
+	color:#000;
+
+}
+
+body {
+	font-family: 'Frijole', cursive;
+}
+
+/*=============================
+		BOX
+===============================*/
+.box {
+	margin: 0 auto;
+	padding:50px 0px 100px 0px;
+	width: 606px;
+}
+
+/*===================================
+		SQUARE
+=====================================*/
+.square {
+	width: 200px;
+	height: 200px;
+	float:left;
+	line-height: 200px;
+	text-align: center;
+	font-size: 100px;
+}
+
+.green {
+	color: #00af00;
+}
+
+
+/*==================================
+		MARGINS
+====================================*/
+.b-right {
+	border-right: 2px solid #000;
+}
+
+.b-bottom {
+	border-bottom: 2px solid #000;
+}
+
+
+
+/*=====================================
+		ANIMATIONS
+========================================*/
+
+@keyframes notempty
+{
+0% {background: red;}
+100% {background: white;}
+}
+
+@-webkit-keyframes notempty 
+{
+0% {background: red;}
+100% {background:white;}
+}
+
+.notempty {
+	animation: notempty 0.7s linear;
+	-webkit-animation:notempty 0.7s linear;
+}
+
+
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px);
+    -ms-transform: translateY(-2000px);
+    transform: translateY(-2000px);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px);
+    -ms-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  80% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounceInDown {
+  -webkit-animation: bounceInDown 1s;
+  animation: bounceInDown 1s;
+}
+
+
+@-webkit-keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px);
+    -ms-transform: translateX(2000px);
+    transform: translateX(2000px);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.slideInRight {
+  -webkit-animation: slideInRight 1s;
+  animation: slideInRight 1s;
+}
+
+
+
+
+
+/*==================================
+	TIME
+====================================*/
+
+.time {
+	font-size: 30px;
+	color:#000;
+	margin-left: 150px;
+	margin-top: 30px;
+	top:0;
+	z-index: 1;
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	border-radius:50%;
+	background-color: green;
+	color:#fff;
+	line-height: 50px;
+	text-align: center;
+}
+
