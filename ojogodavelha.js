@@ -13,8 +13,9 @@
 					];
 
 		$('.square').click(function(){
-			/*if(!$(this).hasClass(lastsquare)){
-				
+			if($(this).hasClass(lastsquare)){
+				$(this).addClass('notempty');
+			}else{
 				if( $(this).hasClass('00') && game[0][0] == "" || 
 					$(this).hasClass('01') && game[0][1] == "" || 
 					$(this).hasClass('02') && game[0][2] == "" ||
@@ -26,29 +27,9 @@
 					$(this).hasClass('22') && game[2][2] == ""){ 
 					
 					
-					if(lastrandom == "") {
-						random = 'X';
-						lastrandom = random;
-					} else {
-						if(lastrandom == 'X') {
-							random = 'O';
-							lastrandom = random;
-						}else {
-							random = 'X';
-							lastrandom = random;
-						}
-					}
-
-				}else{
 					
-					$(this).addClass('notempty');
 
-				}
-			}else{
-					
-					$(this).addClass('notempty');
-				}*/
-				
+			
 				
 				if($(this).hasClass('00') && game[0][0] == ""){
 					game[0][0] = 'x';
@@ -203,8 +184,9 @@
 						
 			 	}
 				
-
-			});
+			}
+		}
+	});
 
 			
 			setInterval(function(){
